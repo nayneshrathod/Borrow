@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home index</title>
+    <style>
+    *{
+    margin:0px;
+    padding:0px;
+    }
+        body{
+            background-color:#a500c7;
+        }
+        section{
+            background-image:url('static\savedatat.png');
+            background-color:white;
+            width:100vw;
+            height:100vh;
+            margin:10px;
+            padding:10px;
+            box-shadow:0 0 20px grey;
+         }
+        h1{
+            position:absolute;
+<!--            position:relative; -->
+            color:white;
+            transform:translate(-50%,-50%);
+            left:50%;
+
+            top:50%;
+            text-shadow:0px 0px 4px white;
+        }
+    </style>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<div>
+
+    <section>
+        <h1>Home</h1>
+        {{ first_name }}
+        {{ middle_name }}
+        {{ last_name }}
+
+
+        <h2>GEO API</h2>
+        <p>Your ip address is <strong>{{ ip }}</strong>, and you are probably in <strong>{{ country }}</strong> right
+            now.</p>
+    </section>
+</div>
+</body>
+</html>
